@@ -21,7 +21,9 @@ pipeline{
         
         stage('Docker compose'){
             steps{
+                sh 'pwd'
                 sh 'cd /root/'
+                sh 'pwd'
                 sh 'docker-compose up -d'
             }
         }
